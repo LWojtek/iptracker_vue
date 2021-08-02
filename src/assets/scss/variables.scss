@@ -1,0 +1,28 @@
+$dark-grey: hsl(0, 0%, 59%);
+$very-dark-grey: hsl(0, 0%, 17%);
+$white: #fff;
+$black: #000;
+
+@mixin font-weight($weight) {
+    $weights: (
+      thin: 100,
+      regular: 400,
+      medium: 500,
+      bold: 700
+    );
+}
+
+.w100 {
+    @include font-weight(thin);
+}
+.w400 {
+    @include font-weight(regular);
+}
+
+.w500 {
+    @include font-weight(medium);
+}
+
+.w700 {
+    @include font-weight(bold);
+}
