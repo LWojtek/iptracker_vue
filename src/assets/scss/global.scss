@@ -14,7 +14,8 @@ body {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 4.6rem;
+    font-weight: 400;
 }
 
 p {
@@ -24,6 +25,9 @@ p {
 input {
     font-family: 'Rubik' , sans-serif;
     font-size: 1.8rem;
+
+    border:none;
+    outline: none;
 }
 
 .container {
@@ -34,4 +38,8 @@ input {
 
 .relative {
     position: relative;
+}
+
+.center {
+    text-align: center;
 }
