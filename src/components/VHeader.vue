@@ -24,20 +24,33 @@ import VInput from '@/components/VInput.vue';
 @import '@/assets/scss/variables.scss';
 
 .header {
-    min-height: 25rem;
-    padding: 3rem 5rem;
+    z-index: 1 !important;
+    min-height: 30rem;
+    padding: 3rem 2rem;
+    transition: 250ms;
+
+    @media screen and (max-width: 467px) {
+        padding: 1.5rem;
+    }
 
     h1 {
         color: $white;
         margin-bottom: 3rem;
+
+        @media screen and (max-width: 767px) {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
     }
+
+
 }
 
 .header--bg{
     background-image: url('../assets/images/pattern-bg.png');
     background-size: cover;
     background-repeat: no-repeat;
-    min-width: 100vw;
+    min-width: 100%;
 }
 
 
